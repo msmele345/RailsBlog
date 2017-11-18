@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-    resources :posts
+    resources :posts do
+      resources :comments
+    end
     root "posts#index"
+
+    get '/about', to: 'pages#about'
 end
 
 
@@ -10,3 +14,4 @@ end
 ##flash.each
 ##render
 
+##nest the resources method call for has many releationships.
