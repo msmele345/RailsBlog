@@ -8,4 +8,5 @@ end
 ##link_to
 ##new_post_path
 ##flash.each
+##render
 
