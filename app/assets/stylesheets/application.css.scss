@@ -14,8 +14,12 @@
  *= require_self
  */
 
-@import 'normalize'
+/*@import 'normalize'*/
 
+.login-bar{
+  padding-right: 10px;
+  float: right;
+}
 /*html, body {
   font-family: 'Raleway', sans-serif;
 }
