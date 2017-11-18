@@ -22,3 +22,5 @@ class PostsController < ApplicationController
     params.require(:post).permit(:title, :body)
   end
 end
+
+##Rails has a security measure called strong params which allows you to explicitly define which params are allowed.
