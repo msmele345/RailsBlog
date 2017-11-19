@@ -10,32 +10,42 @@
   </head>
 
   <body>
+   <nav class="login-bar">
+    <% if current_user %>
+       Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+     <% else %>
+       <%= link_to 'Login', login_path %> | <%= link_to 'Signup', signup_path %>
+    <% end %>
+  </nav>
+
     <div id="sidebar">
       <div id="logo">
         <%= link_to root_path do  %>
         <% end  %>
 
-        <ul>
-          <li class="category">Website</li>
-          <li><%= link_to "Blog", root_path %></li>
-          <li><%= link_to "About", about_path %></li>
-        </ul>
+        <nav class="main-nav">
+          <ul>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+          </ul>
+        </nav>
 
-        <ul>
-          <li class="category">Social</li>
-          <li><a href="https://twitter.com/mitchell_sean35">Twitter</a></li>
-          <li><a href="mitchmele@gmail.com">Gmail</a></li>
-          <li><a href="https://www.linkedin.com/in/mitch-mele-823643b5/">Linkedin</a></li>
-          <li><a href="https://github.com/msmele345">Github</a></li>
-        </ul>
+        <nav class="category">
+          <ul>
+          Author Socials:
+            <li><a href="https://twitter.com/mitchell_sean35">Twitter</a></li>
+            <li><a href="mitchmele@gmail.com">Gmail</a></li>
+            <li><a href="https://www.linkedin.com/in/mitch-mele-823643b5/"> Linkedin</a></li>
+            <li><a href="https://github.com/msmele345">Github</a></li>
+          </ul>
+        </nav>
+
       </div>
-
-      <p class="sign_in">Admin Login</p>
     </div>
 
     <div id="main_content">
+      <h2 id="main-header">The Jr Dev Files</h2>
       <div id="header">
-        <p>All Posts</p>
         <div class="buttons">
           <button class="button"><%= link_to "New Post", new_post_path %></button>
           <button class="button">Log Out</button>
