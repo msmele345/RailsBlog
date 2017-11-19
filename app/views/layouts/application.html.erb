@@ -47,9 +47,11 @@
     <div id="main_content">
       <h2 id="main-header">The Jr Dev Files</h2>
       <div id="header">
+      <% if current_user %>
         <div class="buttons">
           <button class="button"><%= link_to "New Post", new_post_path %></button>
         </div>
+        <% end %>
       </div>
       <% flash.each do |name, msg| %>
         <%= content_tag(:div, msg, class: "alert") %>

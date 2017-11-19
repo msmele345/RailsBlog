@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user_id = current_user.id
 
     if @post.save
       redirect_to @post
@@ -26,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    authorize
     @post =Post.find(params[:id])
     if @post.update(params[:post].permit(:title, :body))
       redirect_to @post
@@ -35,6 +37,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    authorize
     @post = Post.find(params[:id])
     @post.destroy
 
