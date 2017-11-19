@@ -15,11 +15,45 @@
  */
 
 /*@import 'normalize'*/
+body {
+      margin: 0;
+      padding: 0;
+      background: #F3FAB6;
+    }
+
+.main-nav {
+  padding-left: 10px;
+  float: left;
+}
 
 .login-bar{
+  padding-top: 6px;
   padding-right: 10px;
   float: right;
+
 }
+
+nav ul {
+  list-style: none;
+  background-color: #A8CD1B;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display:inline;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  line-height: 40px;
+  height: 40px;
+}
+
+#main-header{
+  display: flex;
+  justify-content: center;
+}
+
 /*html, body {
   font-family: 'Raleway', sans-serif;
 }
