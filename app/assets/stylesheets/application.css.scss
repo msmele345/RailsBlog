@@ -51,7 +51,77 @@ nav li {
 
 #main-header{
   display: flex;
+  font-weight: 500;
+  margin-bottom: 2cm;
   justify-content: center;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  letter-spacing: 2px;
+  font-size: 3em;
+}
+
+.post-wrapper a {
+  display: flex;
+  justify-content: center;
+  color: #4A96AD;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.post-wrapper p {
+  display: flex;
+  justify-content: center;
+}
+
+form#new_comment {
+  margin-left: 1cm;
+}
+
+#comments h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  margin-left: 1cm;
+}
+
+#comments h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1em;
+  margin-left: 1cm;
+}
+
+#post_content h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.date{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1em;
+  text-align: center;
+}
+
+.body{
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+}
+
+div.comment.clearfix {
+  margin-left: 1cm;
+  font-size: 13px;
+}
+
+.button{
+  margin-left: 20px;
+}
+
+#page_wrapper form{
+  text-align: center;
+}
+
+#page_wrapper h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
 }
 
 /*html, body {

@@ -18,11 +18,12 @@ Rails.application.routes.draw do
 
 end
 
-
+##Service Objects
 ##time_ago_in_words
 ##link_to
 ##new_post_path
 ##flash.each
 ##render
+##pluaralize
 
 ##nest the resources method call for has many releationships.
