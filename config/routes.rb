@@ -25,5 +25,6 @@ end
 ##flash.each
 ##render
 ##pluaralize
+##auto generated url helpers
 
 ##nest the resources method call for has many releationships.
